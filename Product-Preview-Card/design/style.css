@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root {
+    --primaria1: hsl(158, 36%, 37%);
+    --primaria2: hsl(30, 38%, 92%);
+    --neutra1:   hsl(212, 21%, 14%);
+    --neutra2:   hsl(228, 12%, 48%);
+    --neutra3:   hsl(0, 0%, 100%);
+    --fontnormal: 'Montserrat', sans-serif;
+    --fontFrances:'Fraunces', serif;
+}
+
+body {
+    background-color: var(--primaria2);
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+    height: 350px;
+    background-color: var(--neutra3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#image {
+    background: white url(../images/image-product-desktop.jpg);
+    width: 220px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+
+#texts {}
+
+p {
+    margin-left: 250px;
+    margin-right: 20px;
+}
+
+#text1 {
+    /*font-family: ; - descobrir a fonte usada*/
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+#text2 {
+    margin-top: 10px;
+    font-family: var(--fontFrances);
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
